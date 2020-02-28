@@ -1,0 +1,29 @@
+{
+  "extends": [
+    "airbnb",
+    "prettier"
+  ],
+  "parser": "babel-eslint",
+  "rules": {
+    "comma-dangle": 0,
+    "import/no-unresolved": 0,
+    "import/extensions": 0,
+    "no-unused-vars": 0,
+    "react/jsx-filename-extension": 0
+  },
+  "globals": {
+    "document": true
+  },
+  "plugins": [
+    "prettier"
+  ],
+  "settings": {
+    "import/resolver": {
+      "babel-module": {
+        "alias": {
+          "#pages": "./src/pages"
+        }
+      }
+    }
+  }
+}
